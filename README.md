@@ -18,3 +18,9 @@ Submission
     Zip up all materials and upload to this dropbox 
 
     Push all code and images to a Github repository and provide me with the URL of your repository (if it is private, I need access - ahuimanu is my username) 
+
+
+## TODO: 
+Add JQuery for showing results_box
+
+Test views on mobile 
