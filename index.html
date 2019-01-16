@@ -2,9 +2,8 @@
 <html lang="en">
     <head>
         <title>Assignment Zero</title>
-         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel"stylesheet" href="/stylesheet.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">
+        <link rel="stylesheet" href="Style.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
@@ -12,16 +11,37 @@
     </head>
     <body>
 
-    <div class="jumbotron text-center banner">
+    <div class="banner jumbotron text-center" style="background-color:red;"><!--unable to get css sheet to override bootstrap4?-->
         <h1>It's PIZZA Time! </h1>
-        <p>Find the lowest pricest pizza near you!</p>
-        
+        <p class="sub_banner">Find the lowest pricest pizza near you!</p>
     </div>
-    <div class="col-sm-4 col-sm-offset-4">
-        <label>Please enter Zip:</label>
-        <input id="search_zip">
-        <br>
-        <button class="search_btn">Search</button>
+    <div id="search_box" class="col-3 mx-auto">
+        <div class="form-check-inline">
+            <label class="form-check-label">
+                <input type="checkbox" class="form-check-input" value="">Cheese
+            </label>
+        </div>
+        <div class="form-check-inline">
+            <label class="form-check-label">
+                <input type="checkbox" class="form-check-input" value="">Pepperoni
+            </label>
+        </div>
+        <div class="form-check-inline">
+            <label class="form-check-label">
+                <input type="checkbox" class="form-check-input" value="">Supreme
+            </label>
+        </div>
+        <div class="container">
+            <label>
+                Please enter Zip:
+                <input id="search_zip" type="text">
+            </label>
+            <br>
+            <button class="search_btn">Search</button>
+        </div>
+    </div>
+    <div class="col-3 mx-auto hidden results_box">
+        <!--To be injected with psudo results via jquery, hiding search_box as well-->
     </div>
     </body>
 </html> 

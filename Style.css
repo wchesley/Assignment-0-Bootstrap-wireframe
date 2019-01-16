@@ -1,0 +1,31 @@
+.banner {
+    background-color: red;
+    color: yellow;
+    text-align: center;
+    font-size: 48px;
+}
+.sub_banner {
+    font-size: 20px;
+}
+.col-center {
+    float: none;
+    margin: 0 auto;
+}
+.search_btn {
+    height: 50px;
+    width: 100px;
+    color: white;
+    margin-left:15%;
+    margin-top: 20px;
+    background-color: green;
+    border: none;
+    border-radius: 10px;
+}
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+button {
+    border-color: skyblue;
+    border-width: 3px;
+    background-color: white;
+}
