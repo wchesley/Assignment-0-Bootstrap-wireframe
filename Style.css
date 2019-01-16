@@ -17,6 +17,12 @@
     border: none;
     border-radius: 10px;
 }
+.result {
+    margin-top: 5%;
+}
+.result a:hover {
+    background-color: #495057;
+}
 body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
