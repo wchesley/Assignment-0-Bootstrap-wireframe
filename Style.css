@@ -19,6 +19,7 @@
 }
 .result {
     margin-top: 5%;
+    display: none;
 }
 .result a:hover {
     background-color: #495057;
