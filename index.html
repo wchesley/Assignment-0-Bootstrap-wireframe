@@ -3,50 +3,68 @@
     <head>
         <title>Assignment Zero</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">
-        <link rel="stylesheet" href="/stylesheet/">
+        <link rel="stylesheet" href="stylesheet/Style.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-        <script type="text/javascript" src="/js/script.js"></script>
+        <script type="text/javascript" src="js/script.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-    </head>
-    <body>
+        <style>
+            /*
+            This was pulled from: 
+            https://stackoverflow.com/questions/48373119/change-bootstrap-4-checkbox-background-color
+            */
+            
+            .custom-control-label:before{
+                 background-color:#F9F2F0;
+            }
+            .custom-checkbox .custom-control-input:checked~.custom-control-label::before{
+                background-color: #F5525D;
+            }
+            .custom-checkbox .custom-control-input:checked~.custom-control-label::after{
+                background-image:url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3E%3Cpath fill='white' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3E%3C/svg%3E");
+            }
+            .custom-control-input:active~.custom-control-label::before{
+                background-color:#A63A44;
+            }
 
-    <div class="banner jumbotron text-center" style="background-color:red;"><!--unable to get css sheet to override bootstrap4?-->
+            /** Set focus shadow color **/
+            .custom-checkbox .custom-control-input:focus~.custom-control-label::before{
+                box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem #A63A44; 
+            }
+        </style><!--was not able to get above styly block to load from /stylesheet/Style.css -->
+    </head>
+    <body class="body">
+
+    <div class="banner jumbotron text-center" style="background-color: #F5525D;"><!--unable to get css sheet to override bootstrap4?-->
         <h1>It's PIZZA Time! </h1>
         <p class="sub_banner">Find the lowest pricest pizza near you!</p>
     </div>
-    <div id="search_box" class="col-3 mx-auto">
-        <div class="form-check-inline">
-            <label class="form-check-label">
-                <input type="checkbox" class="form-check-input" id="choice">Cheese
-            </label>
-        </div>
-        <div class="form-check-inline">
-            <label class="form-check-label">
-                <input type="checkbox" class="form-check-input" id="choice">Pepperoni
-            </label>
-        </div>
-        <div class="form-check-inline">
-            <label class="form-check-label">
-                <input type="checkbox" class="form-check-input" id="choice">Supreme
-            </label>
-        </div>
+    <div id="search_box" class="col-6 mx-auto main_div">
+            <form>
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="choice_chz">
+                    <label class="custom-control-label" for="choice_chz">Cheese</label>
+                    <input type="checkbox" class="custom-control-input" id="choice_pepp">
+                    <label class="custom-control-label" for="choice_pepp">Pepperoni</label>
+                    <input type="checkbox" class="custom-control-input" id="choice_super">
+                    <label class="custom-control-label" for="choice_super">Supreme</label>
+                </div> 
         <div class="container">
-            <label>
-                Please enter Zip:
+            <label for="search_zip">Please Enter Zip Code:</label>
                 <input id="search_zip" type="text">
-            </label>
-            <br>
             <button class="search_btn"id="search_btn">Search</button>
+            </form>
         </div>
-    </div>
+    
     <div class="col-3 mx-auto result"  id="results_box">
         <!--To be injected with psudo results via jquery, hiding search_box as well-->
         <div class="container list-group" id="links_div">
-            <a href="javascript:void(0)" class="list-group-item list-group-item-action result">Tester</a>
+            <!--Img placeholder-->
+
         </div>
     </div>
+    </div> <!--End Main_div-->
     </body>
 </html> 
 <script>

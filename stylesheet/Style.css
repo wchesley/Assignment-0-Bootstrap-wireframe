@@ -1,19 +1,38 @@
+/*
+Color scheme: 
+Main Red: F5525D
+Alt Red: A63A44
+Blue: B7E4F2
+Green: 6F9940
+White: F9F2F0
+*/
+.main_div {
+    background-color: #B7E4F2;
+    height:100%;
+    width: 100%; 
+}
 .banner {
-    background-color: red;
-    color: yellow;
+    background-color: #F5525D;
+    color: #F9F2F0;
+    text-shadow: 2px 2px 1px black;
     text-align: center;
     font-size: 48px;
 }
 .sub_banner {
     font-size: 20px;
 }
+.custom-control-label {
+    margin: 5%; 
+}
 .search_btn {
     height: 50px;
     width: 100px;
     color: white;
-    margin-left:15%;
-    margin-top: 20px;
-    background-color: green;
+    margin-left: 20%;
+    margin-right: 25%;
+    margin-top: 10%;
+    margin-bottom: 10%; 
+    background-color: #6F9940;
     border: none;
     border-radius: 10px;
 }
@@ -24,8 +43,10 @@
 .result a:hover {
     background-color: #495057;
 }
-body {
+.body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-image: url("../img/Pizza-Pattern-Vector.jpg");
+    background-color: #B7E4F2;
 }
 button {
     border-color: skyblue;
