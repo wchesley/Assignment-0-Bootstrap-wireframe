@@ -34,7 +34,7 @@
             }
         </style><!--was not able to get above styly block to load from /stylesheet/Style.css -->
     </head>
-    <body class="body">
+    <body>
 
     <div class="banner jumbotron text-center" style="background-color: #F5525D;"><!--unable to get css sheet to override bootstrap4?-->
         <h1>It's PIZZA Time! </h1>
@@ -52,19 +52,20 @@
                 </div> 
         <div class="container">
             <label for="search_zip">Please Enter Zip Code:</label>
-                <input id="search_zip" type="text">
+                <input class="zip_box" id="search_zip" type="text">
             <button class="search_btn"id="search_btn">Search</button>
             </form>
         </div>
-    
+    </div> 
     <div class="col-3 mx-auto result"  id="results_box">
         <!--To be injected with psudo results via jquery, hiding search_box as well-->
         <div class="container list-group" id="links_div">
-            <!--Img placeholder-->
-
+            <img src="img/Pizza-icon.jpg" class="pizza-icon" alt="Pizza!">
+            <p>YOUR_CHOICE Pizza was foun in your area! </p>
+            <label class="price-lbl">Price: $$</label>
+            <button class="order-btn">Order Now!</button>
         </div>
     </div>
-    </div> <!--End Main_div-->
     </body>
 </html> 
 <script>

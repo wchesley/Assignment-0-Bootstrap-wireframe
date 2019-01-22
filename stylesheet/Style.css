@@ -1,5 +1,5 @@
 /*
-Color scheme: 
+Color scheme:
 Main Red: F5525D
 Alt Red: A63A44
 Blue: B7E4F2
@@ -7,9 +7,11 @@ Green: 6F9940
 White: F9F2F0
 */
 .main_div {
+    display: block;
     background-color: #B7E4F2;
-    height:100%;
-    width: 100%; 
+    box-shadow: 5px 5px 5px;
+    height:80vh;
+    width: 100vw;
 }
 .banner {
     background-color: #F5525D;
@@ -22,34 +24,48 @@ White: F9F2F0
     font-size: 20px;
 }
 .custom-control-label {
-    margin: 5%; 
+    margin: 2vh;
 }
 .search_btn {
-    height: 50px;
-    width: 100px;
+    height: 15vh;
+    width: 30vw;
     color: white;
-    margin-left: 20%;
-    margin-right: 25%;
-    margin-top: 10%;
-    margin-bottom: 10%; 
+    margin-left: 5vw;
+    margin-right: 20vw;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
     background-color: #6F9940;
     border: none;
     border-radius: 10px;
 }
+.zip_box {
+    width: 40vw;
+    border-radius: 5px;
+    border: 1px solid #F5525D;
+}
 .result {
     margin-top: 5%;
-    display: none;
+    display: block;
+    border: 1px;
+    background-color: #B7E4F2;
+    box-shadow: 5px 0px 5px; 
 }
 .result a:hover {
     background-color: #495057;
 }
-.body {
+.pizza-icon {
+    height: 10vh;
+    width: 5vw;
+    position: left;
+    margin: 2px; 
+}
+body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-image: url("../img/Pizza-Pattern-Vector.jpg");
     background-color: #B7E4F2;
 }
 button {
-    border-color: skyblue;
-    border-width: 3px;
-    background-color: white;
+    background-color: #6F9940;
+    border: none;
+    border-radius: 10px;
 }

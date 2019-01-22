@@ -2,6 +2,7 @@ function show_results() {
     var btn = document.getElementById("search_btn").addEventListener("click", create_results());
     var results_div = document.getElementById("results_box");
     results_div.style.display = "block";
+    document.getElementById("main_div").display = "none";
 }
 
 function create_results() {
@@ -17,5 +18,5 @@ function create_results() {
 
 function build_results(choice_value) {
     var indiv_result = document.createElement("div");
-    var reustl_html = '<div class="container"><img src="random-one-from-internet-here" alt-txt="its pizza" class="pizza_pic"><p>Found a '+ choice_value +' pizza near you <br> Price: <button>ORDER NOW!</button></p>';
+    var reustl_html = '<div class="container"><img src="/img/Pizza-icon.jpg" class="pizza-icon" alt-txt="its pizza" class="pizza_pic"><p>Found a '+ choice_value +' pizza near you <br> Price: <button>ORDER NOW!</button></p>';
 }
