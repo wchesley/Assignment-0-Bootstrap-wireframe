@@ -6,8 +6,19 @@ Blue: B7E4F2
 Green: 6F9940
 White: F9F2F0
 */
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-image: url("../img/Pizza-Pattern-Vector.jpg");
+    background-color: #B7E4F2;
+}
+button {
+    background-color: #6F9940;
+    border: none;
+    border-radius: 10px;
+}
 .main_div {
     display: block;
+    margin-bottom: 2vh;
     background-color: #B7E4F2;
     box-shadow: 5px 5px 5px;
     height:80vh;
@@ -45,27 +56,40 @@ White: F9F2F0
 }
 .result {
     margin-top: 5%;
-    display: block;
-    border: 1px;
-    background-color: #B7E4F2;
-    box-shadow: 5px 0px 5px; 
+    margin-bottom: 3vh;
+    border: none;
+    display: none;
 }
-.result a:hover {
-    background-color: #495057;
+.result-group a:hover {
+    background-color: #F9F2F0;
+}
+.result-group {
+    margin: 2vw;
+    box-shadow: 5px 0px 5px; 
+    border:2px;
+    border-color: #A63A44;
+    background-color: #B7E4F2;
+    color: #A63A44; 
+}
+.pizza-desc {
+   margin-left: 10vw;
 }
 .pizza-icon {
+    height: 5vh;
+    width: 2.5vw;
+    position: relative;
+    margin: 0.5vw; 
+}
+.price-lbl {
+    margin-left: 5vw;
+}
+.order-btn {
     height: 10vh;
-    width: 5vw;
-    position: left;
-    margin: 2px; 
-}
-body {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-image: url("../img/Pizza-Pattern-Vector.jpg");
-    background-color: #B7E4F2;
-}
-button {
-    background-color: #6F9940;
-    border: none;
+    width: 10vw;
+    margin-left: 5vw;
+    margin-bottom: 2vh;
+    color: white;
+    font-weight: bold;
+    text-decoration: underline;
     border-radius: 10px;
 }

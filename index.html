@@ -41,7 +41,6 @@
         <p class="sub_banner">Find the lowest pricest pizza near you!</p>
     </div>
     <div id="search_box" class="col-6 mx-auto main_div">
-            <form>
                 <div class="custom-control custom-checkbox">
                     <input type="checkbox" class="custom-control-input" id="choice_chz">
                     <label class="custom-control-label" for="choice_chz">Cheese</label>
@@ -53,15 +52,14 @@
         <div class="container">
             <label for="search_zip">Please Enter Zip Code:</label>
                 <input class="zip_box" id="search_zip" type="text">
-            <button class="search_btn"id="search_btn">Search</button>
-            </form>
+            <button class="search_btn"id="search_btn" onclick="show_results()">Search</button>
         </div>
     </div> 
-    <div class="col-3 mx-auto result"  id="results_box">
-        <!--To be injected with psudo results via jquery, hiding search_box as well-->
-        <div class="container list-group" id="links_div">
+    <div class="col-9 mx-auto result"  id="results_box">
+        <!--To be injected with psudo results via JS, hiding search_box as well-->
+        <div class="container result-group" id="links_div">
             <img src="img/Pizza-icon.jpg" class="pizza-icon" alt="Pizza!">
-            <p>YOUR_CHOICE Pizza was foun in your area! </p>
+            <p class="pizza-desc">Pizza was found in your area! </p>
             <label class="price-lbl">Price: $$</label>
             <button class="order-btn">Order Now!</button>
         </div>
@@ -69,4 +67,5 @@
     </body>
 </html> 
 <script>
+    //var btn = document.getElementById("search_btn").addEventListener("click", show_results());
 </script>
