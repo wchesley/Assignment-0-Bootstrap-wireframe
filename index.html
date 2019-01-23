@@ -35,8 +35,11 @@
         </style><!--was not able to get above styly block to load from /stylesheet/Style.css -->
     </head>
     <body>
-
-    <div class="banner jumbotron text-center" style="background-color: #F5525D;"><!--unable to get css sheet to override bootstrap4?-->
+     <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="sign_up.html">Sign Up</a></li>
+    </ul>
+    <div class="banner jumbotron text-center" style="background-color: #F5525D; padding-top:6vw;"><!--unable to get css sheet to override bootstrap4?-->
         <h1>It's PIZZA Time! </h1>
         <p class="sub_banner">Find the lowest pricest pizza near you!</p>
     </div>
@@ -59,9 +62,9 @@
         <!--To be injected with psudo results via JS, hiding search_box as well-->
         <div class="container result-group" id="links_div">
             <img src="img/Pizza-icon.jpg" class="pizza-icon" alt="Pizza!">
-            <p class="pizza-desc">Pizza was found in your area! </p>
+            <p class="pizza-desc">Pizza was found in your area! <br>Provided by: Company X</p>
             <label class="price-lbl">Price: $$</label>
-            <button class="order-btn">Order Now!</button>
+            <button class="order-btn" id="order" onclick="location.href='order.html';">Order Now!</button>
         </div>
     </div>
     </body>

@@ -5,6 +5,7 @@ function show_results() {
     search_div.style.display = "none";
     //create_results(); still in dev...
 }
+
 /*****for Dev branch, untested code **************************
 function create_results() {
     document.getElementById("results_box").focus();

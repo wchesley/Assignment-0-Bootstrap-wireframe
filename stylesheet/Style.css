@@ -14,10 +14,36 @@ body {
 button {
     background-color: #6F9940;
     border: none;
-    border-radius: 10px;
+    color: white;
+}
+ul {
+    list-style-type: none;
+    margin: 2vw;
+    padding: 1vw;
+    width: 100%;
+    background-color: #F5525D; 
+    position: fixed;
+    overflow: hidden;
+}
+li a {
+    float: left;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border: 1px;
+    border-color: #A63A44;
+    padding: 1vw;
+}
+li a:hover {
+    background-color: #A63A44;
+    text-decoration: underline;
+}
+.sign_up_form {
+    margin: 3vw; 
 }
 .main_div {
     display: block;
+    margin-top: 2vh;
     margin-bottom: 2vh;
     background-color: #B7E4F2;
     box-shadow: 5px 5px 5px;
@@ -60,7 +86,7 @@ button {
     border: none;
     display: none;
 }
-.result-group a:hover {
+.result-group div:hover {
     background-color: #F9F2F0;
 }
 .result-group {
