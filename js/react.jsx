@@ -33,7 +33,7 @@ class Header extends Component {
         <NavBar />
         <div class="banner jumbotron text-center" style="background-color: #F5525D; padding-top:6vw;">
             <h1>It's PIZZA Time! </h1>
-            <p class="sub_banner">Find the lowest pricest pizza near you!</p>
+            <p class="sub_banner">Find the lowest pricest pizza near you! Some Change?</p>
         </div>
         <SearchBox />
         <ZipBox />
