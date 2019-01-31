@@ -1,4 +1,4 @@
-function show_results() {
+    function show_results() {
     var results_div = document.getElementById("results_box");
     results_div.style.display = "block";
     var search_div = document.getElementById("search_box");
